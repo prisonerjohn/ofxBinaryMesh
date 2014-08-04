@@ -89,6 +89,8 @@ namespace ofx
             }
 
             file.close();
+
+			return true;
         }
     }
 }
