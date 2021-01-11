@@ -5,7 +5,7 @@ namespace ofx
     namespace BinaryMesh 
     {
         //--------------------------------------------------------------
-        void save(const string& path, const ofMesh& mesh)
+        void save(const std::filesystem::path & path, const ofMesh & mesh)
         {
             ofFile file(path, ofFile::WriteOnly, true);
 
@@ -43,7 +43,7 @@ namespace ofx
         }
 
         //--------------------------------------------------------------
-        bool load(const string& path, ofMesh& mesh)
+        bool load(const std::filesystem::path & path, ofMesh & mesh)
         {
             ofFile file(path, ofFile::ReadOnly, true);
             if (!file.exists()) {

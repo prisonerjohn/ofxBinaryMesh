@@ -6,8 +6,8 @@ namespace ofx
 { 
     namespace BinaryMesh 
     {
-        void save(const string& path, const ofMesh& mesh);
-        bool load(const string& path, ofMesh& mesh);
+        void save(const std::filesystem::path & path, const ofMesh & mesh);
+        bool load(const std::filesystem::path & path, ofMesh & mesh);
     }
 }
 
